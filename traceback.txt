@@ -1,0 +1,23 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 97, in script
+    jump scene_astronomy
+renpy.script.LabelNotFound: could not find label 'scene_astronomy'. Did you mean: 'scene_astronomie'?
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 97, in script
+    jump scene_astronomy
+  File "renpy/ast.py", line 1938, in execute
+    rv = renpy.game.script.lookup(target)
+         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "renpy/script.py", line 1217, in lookup
+    raise LabelNotFound(original)
+renpy.script.LabelNotFound: could not find label 'scene_astronomy'. Did you mean: 'scene_astronomie'?
+
+Linux-7.2.9-200.nobara.fc44.x86_64-x86_64-with-glibc2.43 x86_64
+Ren'Py 8.5.3.26051504
+EIKO 1.0
+Wed Oct 14 21:01:29 2026
